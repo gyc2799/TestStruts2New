@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="default" extends="struts-default" namespace="/">
+    	<!-- name action的名字，此名字可以自己自由取，但是尽量使用action的Java类的类名       class：实现类 -->
+        <action name="MyAction" class="cn.gyc2799.action.MyAction" >
+        	<!-- 结果集，即action中SUCCESS返回的视图 -->
+            <result name="MyOK">/WEB-INF/Myjsp/result.jsp</result>
+        </action>
+    </package>
+</struts>
